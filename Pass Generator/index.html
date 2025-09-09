@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 16px;
+      padding: 30px 40px;
+      color: #fff;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      width: 380px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    /* Settings Styling */
+    .settings {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .settings label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 14px;
+      gap: 10px;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.2);
+      accent-color: #2e675c;
+      cursor: pointer;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 6px;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #333;
+      font-size: 14px;
+    }
+
+    /* Button Styling */
+    button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: linear-gradient(to right, #3e8083, #4facfe);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(102, 182, 187, 0.6);
+    }
+
+    /* Output */
+    .output {
+      margin-top: 25px;
+    }
+
+    #result {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.3);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Random Password Generator</h1>
+
+    <div class="settings">
+      <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label>
+      <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label>
+      <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
+      <label><input type="checkbox" id="symbols" checked> Include Symbols</label>
+      <div>Password Length: <input type="number" id="length" value="12" min="1"></label>
+      </div>
+
+      <button onclick="handleGenerate()">Generate Password</button>
+
+      <div class="output">
+        <input type="text" id="result" readonly>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
