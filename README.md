@@ -9,14 +9,14 @@ This repository contains small JavaScript projects built to practice DOM manipul
 - Allows choosing length and characters
 - Simple, fast, and responsive
 
-![Password Generator Screenshot](./password-generator/Screenshot.png)
+![Password Generator Screenshot](./Pass Generator/Screenshot.png)
 
 ### 2. Stopwatch
 - Start, pause, reset functionality
 - Clean and minimal UI
 - Accurate time tracking
 
-![Stopwatch Screenshot](./stopwatch/Screenshot.png)
+![Stopwatch Screenshot](./Stopwatch/Screenshot.png)
 
 ## Tech Stack
 - HTML
