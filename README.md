@@ -9,7 +9,7 @@ This repository contains small JavaScript projects built to practice DOM manipul
 - Allows choosing length and characters
 - Simple, fast, and responsive
 
-![Password Generator Screenshot](./Pass Generator/Screenshot.png)
+![Password Generator Screenshot](./PasswordGenerator/Screenshot.png)
 
 ### 2. Stopwatch
 - Start, pause, reset functionality
